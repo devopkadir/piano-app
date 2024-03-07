@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(piano.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.info {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 1px purple;
+}
+
+#informationMessage {
+    color: rgb(251, 255, 0);
+    background-color: green;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+input {
+    margin-top: 1rem;
+    text-align: center;
+    background-color: rgb(71, 235, 6);
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    width: 5rem;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: rgba(73, 189, 24, 0.89);
+}
+
+input:active {
+    background-color: rgba(1, 173, 53, 0.897);
+}
+
+h1 {
+    font-size: 3rem;
+    color: red;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    margin: 2px;
+    width: 50px;
+    padding: 10px 20px;
+    height: 200px;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white-active {
+    background-color: wheat;
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+.black-active {
+    background-color: gray;
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+.disable {
+    background-color: white;
+}
+
+.remove {
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.1);
+}
+
+@media (max-height: 800px) {
+    .info {
+        display: none;
+    }
+}
